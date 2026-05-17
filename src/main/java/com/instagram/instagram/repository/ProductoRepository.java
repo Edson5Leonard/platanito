@@ -16,7 +16,7 @@ import com.instagram.instagram.models.Producto;
 
 public interface ProductoRepository extends JpaRepository<Producto, Long> {
 
-    List<Producto> findByCategoria(String categoria);
+    List<Producto> findByCategoriaIgnoreCase(String categoria);
 
     // Para cuando el usuario filtra por "SODAS" dentro de comida
     List<Producto> findBySubcategoria(String subcategoria);
@@ -25,6 +25,7 @@ public interface ProductoRepository extends JpaRepository<Producto, Long> {
 
     List<Producto> findByMarca(String marca);
 
+    
 
     
 }   

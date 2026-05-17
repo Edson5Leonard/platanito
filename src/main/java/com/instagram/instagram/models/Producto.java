@@ -10,8 +10,8 @@ public class Producto {
 
     @Id
     @jakarta.persistence.GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
-    
     private Long id;
+    
     private String marca;
 
     private String nombre;
@@ -32,5 +32,8 @@ public class Producto {
 
     private String subcategoria;
 
+    private String imagenUrl;
+
+    
     
 }

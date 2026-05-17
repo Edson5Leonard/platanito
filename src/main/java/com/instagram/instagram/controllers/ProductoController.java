@@ -40,7 +40,7 @@ public class ProductoController {
     
     @GetMapping("/categoria/{nombreCategoria}")
     public List<Producto> listarPorCategoria(@PathVariable String nombreCategoria) {
-        return productoRepository.findByCategoria(nombreCategoria);
+        return productoRepository.findByCategoriaIgnoreCase(nombreCategoria);
     }
 
     
